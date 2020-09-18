@@ -1,0 +1,12 @@
+/* COMMON */
+html{
+    --bg : rgb(240, 160, 31);
+}
+/* HEADER */
+
+header{
+    background: var(--bg);
+}
+/* MAIN */
+
+/* FOOTER */
