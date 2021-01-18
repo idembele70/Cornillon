@@ -1,0 +1,23 @@
+header {
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: -8px;
+    position: sticky; 
+    top: 0;
+    box-shadow: 0 1px 10px black;
+    height: 30px;
+}
+
+header > a img {
+    width: 60px;
+}
+
+nav > ul li {
+    display: inline-block;
+    background: var(--libg);
+    padding: 2px 28px 2px 28px;
+    list-style-type: none;
+}

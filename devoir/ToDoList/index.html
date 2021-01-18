@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/main.css">
+
+
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="container">
+        <div class="p-3 mb-2 bg-info text-white" id="todoBox">
+            <div id="todoList">
+                <h2 class="text-warning"> To Do List</h2>
+                <div class="input-group mb-3" class="">
+                    <input id="tacheSaisie" type="text" class="form-control" placeholder="Nouvelles tâches"
+                        aria-label="nouveaux taches" aria-describedby="button-addon2">
+                    <div class="input-group-append" id="btn">
+                        <button class="btn btn-outline-warning" type="button" id="button-addon2"
+                            onclick="nouvelleTache()">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12">
+            <ul id="listeTache" class="">
+                
+
+                </div>
+            </ul>
+
+        </div>
+    </div>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script> -->
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

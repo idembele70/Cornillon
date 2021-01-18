@@ -1,0 +1,21 @@
+const contacts = [
+  { fn: 'coco', ln: 'coco', tel: '0687878787', mail: 'coco@mail.fr', city: 'bordeaux' },
+  { fn: 'jaco', ln: 'jaco', tel: '0698989898', mail: 'jaco@mail.fr', city: 'paris' },
+  { fn: 'pedro', ln: 'pedro', tel: '0545454545', mail: 'pedro@mail.fr', city: 'toulouse' },
+  { fn: 'franco', ln: 'franco', tel: '0934343434', mail: 'franco@mail.fr', city: 'nice' },
+];
+
+function displayContact({ln, fn, mail, tel, city}) {
+  const str = `
+    Nom: ${ln} - Prénom: ${fn}
+    Tel: ${tel}
+    Adresse: ${mail}
+    Ville: ${city}
+  `;
+
+  console.log(str);
+}
+
+for (let c of contacts) {
+  displayContact(c);
+}

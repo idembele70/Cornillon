@@ -1,0 +1,21 @@
+
+#home, #admin {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 30px;
+}
+#home h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px red;
+}
+#home a {
+  text-decoration: none;
+  padding: 10px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}

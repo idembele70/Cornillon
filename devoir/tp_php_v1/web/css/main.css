@@ -1,0 +1,24 @@
+@import 'article.css';
+@import 'nav.css';
+@import '404.css';
+
+body {
+  min-width: 450px;
+  min-height: 980px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.wrapper {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-success {
+  margin-left: 5px;
+}

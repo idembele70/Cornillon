@@ -1,0 +1,10 @@
+DEVOIR TODOLIST
+4:06
+Donner la possibilité à l'utilisateur d'ajouter, modifier, supprimer des tâches.
+4:07
+Permettre à l'utilisateur de retrouver sa liste de tâche tel qu'il l'a laissé (s'il ferme l'onglet ou le navigateur, il ne faut pas qu'il se retrouve avec une liste réinitialisée)
+Petite indice: pour sauvegarder/charger la liste de todos, vous pouvez utiliser l'API WebStorage : https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API
+
+Il faut travailler le visuel un minimum et pourquoi pas l'intégrer dans un "petit site" (ce sera compter comme bonus)
+4:12
+Pour ce qui concerne la partie GUI, il vous faut au minimum: un formulaire pour saisir la nouvelle tâche, un message ou autre pour indiquer qu'il n'y a pas encore de tâche à votre liste, supprimer ce message dès qu'une première tâche est créée

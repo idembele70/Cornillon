@@ -1,8 +1,0 @@
-header {
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    /* background-color:var(--bgNav); */
-    
-    top: 0px;
-}

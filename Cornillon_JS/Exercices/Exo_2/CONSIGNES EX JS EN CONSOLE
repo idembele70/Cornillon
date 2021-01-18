@@ -1,0 +1,5 @@
+// AFFICHER UN REPERTOIRE DE CONTACTS
+
+// 1 --> Utiliser une structure de données pour vos contacts
+// 2 --> Créer une fonction pour l'affichage d'un contact en console
+// 3 --> Utiliser une méthode de parcours pour exécuter la fonction d'affichage

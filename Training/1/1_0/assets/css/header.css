@@ -1,0 +1,25 @@
+header {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 2px 5px black;
+}
+
+.logo {
+    top: 100px;
+    left: 15px;
+}
+
+.logo > a img {
+    padding: 10px;
+    width: 90px;
+    /* fonctionne pas avec mon images !
+    height : 90px;
+    */
+}
+
+/* .logo > a:hover img {
+    border: solid black;
+} */

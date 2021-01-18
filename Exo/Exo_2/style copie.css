@@ -1,0 +1,79 @@
+:root {
+  --primary-color: hsl(27, 87%, 49%);
+  --darken-primary-color: hsl(27, 87%, 29%);
+  --lighten-primary-color: hsl(27, 87%, 69%);
+  --secondary-color: hsl(197, 87%, 49%);
+  --darken-secondary-color: hsl(197, 87%, 29%);
+  --lighten-secondary-color: hsl(197, 87%, 69%);
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: auto;
+  min-width: 500px;
+}
+
+/* HEADER */
+header {
+  height: 80px;
+  display: flex;
+  padding-top: 5px;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  box-shadow: 0 3px 2px var(--darken-secondary-color);
+}
+  header .logo img {
+    width: 70px;
+  }
+
+main {
+  display: grid;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 340px;
+  grid-template-areas:  "pizzas pizzas pizzas"
+                        "details details cart";
+  gap: 8px 2px;
+}
+  .pizzas {
+    grid-area: pizzas;
+    background: red;
+  }
+  .slides {
+    height: 100%;
+    position: relative;
+    transition: left 500ms ease-in-out !important;
+    background: url() center no-repeat;
+    left: 0;
+    width: calc(100% * 3); /* TMP */
+  }
+  .pizza {
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100% / 3); /* TMP */
+  }
+  .details {
+    grid-area: details;
+    background: purple;
+  }
+  .cart {
+    grid-area: cart;
+    background: green;
+  }
+
+#home {
+  display: none;
+}

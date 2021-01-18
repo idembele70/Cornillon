@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Site Web N2</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#logo">
+                <img onerror='this.src = "assets/img/riyad_mahrez.jpeg"' alt="photo de riyad mahrez"
+                    src="assets/img/riyad_mahrez.jpeg">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2> Bienvenue sur mon site !</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et suscipit numquam aperiam quaerat ratione
+                autem alias ipsa! Explicabo, vero minus nobis dolore est ducimus dolor mollitia maxime? Quaerat,
+                perferendis.
+            </p>
+        </section>
+        <section id="presentation">
+            <h2> Qui sommes Nous ?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et suscipit numquam aperiam quaerat ratione
+                autem alias ipsa! Explicabo, vero minus nobis dolore est ducimus dolor mollitia maxime? Quaerat,
+                perferendis.
+            </p>
+        </section>
+        <section id="services">
+            <h2> nos prestations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et suscipit numquam aperiam quaerat ratione
+                autem alias ipsa! Explicabo, vero minus nobis dolore est ducimus dolor mollitia maxime? Quaerat,
+                perferendis.
+            </p>
+        </section>
+        <section id="contact">
+            <h2> Nous contacter</h2>
+
+            <form action="">
+                <fieldset>
+                    <legend>Informations</legend>
+
+                    <div>
+                        <p>Civilités:</p>
+                        <label>Monsieur <input type="radio" name="sexe"></label>
+                        <label>Madame <input type="radio" name="sexe" checked> </label>
+                    </div>
+
+                    <div>
+                        <label for="nomSaisie">Nom:</label>
+                        <input type="text" name="nom" id="nomDeFamille" autofocus required>
+                    </div>
+
+                    <div>
+                        <label for="prenomSaisie">Prenom:</label>
+                        <input type="text" name="prenom" id="pn">
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <div>
+                        <label>
+                            Sujet: </label>
+
+                        <input type="text" name="sujet">
+                    </div>
+                    <div>
+                        <label>
+                            Message:
+
+                            <textarea name="message" cols="30" rows="10"></textarea>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Envoyer">
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Ibrahim DEMBELE - 2020</p>
+    </footer>
+
+</body>
+
+</html>

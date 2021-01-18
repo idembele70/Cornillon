@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Site test</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img onerror="this.src = './assets/img/no-img.png'" src="./assets/img/dwaps-600.ng" alt="Logo" width="90">
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="home">
+        <h2>Bienvenue sur mon site !</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id commodi asperiores eius dicta vitae, molestiae fuga, hic sapiente mollitia, dolorem accusamus architecto autem. Porro adipisci iste ipsa excepturi ullam assumenda.
+        </p>
+      </section>
+      <section id="presentation">
+        <h2>Qui sommes-nous ?</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id commodi asperiores eius dicta vitae, molestiae fuga, hic sapiente mollitia, dolorem accusamus architecto autem. Porro adipisci iste ipsa excepturi ullam assumenda.
+        </p>
+      </section>
+      <section id="services">
+        <h2>Nos prestations</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id commodi asperiores eius dicta vitae, molestiae fuga, hic sapiente mollitia, dolorem accusamus architecto autem. Porro adipisci iste ipsa excepturi ullam assumenda.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Nous contacter</h2>
+
+        <form action="">
+          <fieldset>
+            <legend>Informations</legend>
+
+            <div>
+              <p>Civilités:</p>
+              <label>Monsieur <input checked type="radio" name="civ"></label>
+              <label>Madame<input type="radio" name="civ">
+            </div>
+
+            <div>
+              <label for="ln">Nom:</label>
+              <input id="ln" type="text" name="lastname" autofocus required>
+            </div>
+
+            <div>
+              <label for="fn">Prénom:</label>
+              <input id="fn" type="text" name="firstname">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Message</legend>
+            <div>
+              <label>
+                Sujet:
+                <input type="text" name="msg">
+              </label>
+            </div>
+
+            <div>
+              <label>
+                Message:
+                <textarea rows="5" cols="30" name="mess"></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <input type="submit">
+        </form>
+        
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; DWAPS - 2020</p>
+    </footer>
+
+  </body>
+  </html>

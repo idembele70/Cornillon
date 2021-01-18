@@ -1,0 +1,19 @@
+/*section h2 {
+    text-align: center;
+}
+
+section > p {
+    text-align: justify;
+    height: 200px;
+}*/
+
+section {
+    user-select: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 50vh;
+}
+
+h2 {
+    text-align: center;
+}

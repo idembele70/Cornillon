@@ -1,0 +1,42 @@
+html{
+  --bg : rgb(240, 160, 31);
+}
+/*
+header{
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    display: flex;
+    justify-content:space-between;
+    box-shadow: 0 1px 5px #333;
+    padding: 10px;
+}
+
+.logo {
+top: 100px;
+left: 15px;
+}
+
+.logo img {
+  padding: 10px;
+  height: 90px;
+}*/
+header {
+  background: var(--bg);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 5px #333;
+}
+
+.logo{
+  top: 100px;
+  left: 15px;
+}
+
+#logo img {
+  padding:10px;
+  width: 90px;
+  height: 90;
+}

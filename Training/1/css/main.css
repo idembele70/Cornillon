@@ -1,0 +1,25 @@
+/* COMMON 
+html{
+    --bg : rgb(240, 160, 31);
+}*/
+
+@import './header.css';
+@import './nav.css';
+@import './sections.css';
+@import './footer.css';
+
+
+body{
+    background-color: black;
+    color: white;
+}
+/* HEADER 
+
+
+*/
+/* MAIN 
+*/
+/* FOOTER 
+
+
+*/

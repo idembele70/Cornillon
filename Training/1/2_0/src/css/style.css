@@ -1,0 +1,10 @@
+@import './header.css';
+/* @import './nav.css' */
+@import './section.css';
+@import './footer.css';
+
+:root {
+    --bg : orange;
+    --libg: yellow;
+    --sectionht : 50vh; /* Hauteur de la section !*/
+}

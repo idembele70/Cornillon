@@ -1,0 +1,16 @@
+:root {
+  --primary-color: hsl(27, 87%, 49%);
+  --darken-primary-color: hsl(27, 87%, 29%);
+  --lighten-primary-color: hsl(27, 87%, 69%);
+  --secondary-color: hsl(197, 87%, 49%);
+  --darken-secondary-color: hsl(197, 87%, 29%);
+  --lighten-secondary-color: hsl(197, 87%, 69%);
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: white;
+  font-family: sans-serif;
+  
+}

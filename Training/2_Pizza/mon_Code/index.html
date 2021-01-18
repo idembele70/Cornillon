@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande de pizza</title>
+
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body style="background-color: grey;">
+    <header>
+        <div class="logo">
+            <a href="#home"><img src="./src/assets/img/Pizza_Hut_Logo.png" alt="logo de pizza hut"></a>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- HOME PAGE -->
+        <section id="home">
+            <h1>Bienvenue !</h1>
+            <h3>Envie d'une pizza ?</h3>
+            <p>N'hesitez pas à consulter notre carte, il suffit de cliquer sur le bouton !</p>
+            <a href="#order-pizza">Passer commande</a>
+        </section>
+    </main>
+
+    <!-- ORDER PIZZA -->
+
+    <div class="slider pizzas">
+        <div class="slides">
+            <div class="pizza">
+                <h1>Tartiflette</h1>
+                <div class="controls">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                </div>
+            </div>
+            <div class="pizza">
+                <h1>Jambon</h1>
+                <div class="controls">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                </div>
+            </div>
+            <div class="pizza">
+                <h1>Fromage</h1>
+                <div class="controls">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="details">
+        <h2> 4 fromages </h2>
+        <button class="add-to-cart"></button>
+        <p>
+            <strong> Catégorie:</strong> <span> Crème </span>
+            <strong> Ingrédients:</strong><span> Tomates, olives... </span>
+            <strong>Prix:</strong><span> 12€</span>
+        </p>
+    </div>
+
+    <article class="typePizza">
+
+
+
+    </article>
+
+    <section class="cart">
+        <h1>Votre Panier</h1>
+        <p>votre panier est vide...</p>
+        <p><strong>TOTAL:</strong> 0€</p>
+    </section>
+
+
+
+    <footer>
+        <div class="menu">
+            <p>La Carte</p>
+            <p>Nos menus</p>
+            <p>Promos</p>
+        </div>
+        <div class="about">
+            <p>Qui Sommes-nous</p>
+            <p>Franchise</p>
+            <p>Nous Trouver</p>
+            <p>Nous contacter</p>
+        </div>
+        <div class="infos">
+            <p>Mentions légales</p>
+            <p>CGV</p>
+            <p>Cookies</p>
+            <p>Données personnelles</p>
+        </div>
+        <div class="admin">
+            <a href="#admin">
+                Administration du site
+            </a>
+        </div>
+    </footer>
+    <script src="./src/main.js"></script>
+</body>
+
+</html>

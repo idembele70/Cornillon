@@ -1,0 +1,10 @@
+@import "header.css";
+@import "./nav.css";
+@import "section.css";
+@import "footer.css";
+
+/* COMMON */
+:root {
+    --bg: #f0a01f;
+    scroll-behavior: smooth;
+}

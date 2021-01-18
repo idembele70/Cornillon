@@ -1,0 +1,18 @@
+const contact = {
+  name: 'coco',
+  sayHello() {
+    console.log(`Salut ${this.name} !`);
+  }
+};
+
+const michael = Object.create(contact);
+michael.name = 'Michael';
+
+const emilie = Object.create(contact);
+
+console.log(michael.name);
+console.log(emilie.name);
+
+console.log(
+  Object.getPrototypeOf(emilie).hasOwnProperty('name')
+);
