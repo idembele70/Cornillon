@@ -20,7 +20,6 @@ body {
 }
 
 /* HEADER */
-
 header {
    height: 80px;
    display: flex;
@@ -33,3 +32,43 @@ header {
     header img {
         width: 70px;
     }
+
+/* MAIN */
+
+/* FOOTER */
+footer {
+display: grid;
+padding: 30px;
+font-size: .7rem;
+background: var(--primary-color);
+box-shadow: 0 -3px 2px var(--darken-secondary-color);
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas: "menu about infos"
+                     ". admin .";
+}
+
+footer p {
+    cursor: pointer;
+}
+
+footer .admin {
+    position: relative;
+    grid-area: admin;
+    text-align: center;
+}
+
+footer .admin::before {
+    position: absolute;
+    content: '🔐';
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .admin a {
+color: var(--darken-secondary-color);
+}
+
+footer .admin a:hover {
+    color: var(--secondary-color);
+}
