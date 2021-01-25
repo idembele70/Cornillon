@@ -35,6 +35,59 @@ header {
 
 /* MAIN */
 
+main {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 8px 2px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 320px;
+    grid-template-areas: 
+    "pizzas pizzas pizzas"
+    "details details cart";
+}
+
+#home {
+    display: none; /*TMP*/
+}
+    .pizzas {
+    grid-area: pizzas;
+    background: red;
+    }
+
+    .slides {
+        height: 100%;
+        width: calc(100% * 3); /* TMP */
+    }
+
+        .pizza {
+            width: calc(100% / 3); /* TMP */
+            height: 100%;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('../assets/img/bg-pizza.jpg') no-repeat;
+        }
+        .pizza h1 {
+            user-select: none;
+            text-transform: uppercase;
+            text-shadow: 0 2px 2px var(--darken-secondary-color),
+            1px 0px 2px var(--darken-secondary-color),
+            0 -1px 2px var(--darken-primary-color),
+            1px 0 2px var(--darken-primary-color);
+        }
+    .details {
+        grid-area: details;
+        background: green;
+    }
+
+    .cart {
+        grid-area: cart;
+        background: blue;
+    }
+
+
 /* FOOTER */
 footer {
 display: grid;
