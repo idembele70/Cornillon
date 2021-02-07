@@ -50,25 +50,32 @@ main {
 #home {
     display: none; /*TMP*/
 }
+main > div:not(:first-of-type) {
+    padding: 10px;
+}
     .pizzas {
     grid-area: pizzas;
-    background: red;
+    overflow: hidden;
     }
 
     .slides {
         height: 100%;
         width: calc(100% * 3); /* TMP */
+        position: relative;
+        transition: left .5s ease-in-out;
+        left: 0;
     }
-
-        .pizza {
-            width: calc(100% / 3); /* TMP */
-            height: 100%;
-            float: left;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url('../assets/img/bg-pizza.jpg') no-repeat;
-        }
+    
+    .pizza {
+        width: calc(100% / 3); /* TMP */
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('../assets/img/bg-pizza.jpg') center no-repeat;
+        position: relative;
+    }
         .pizza h1 {
             user-select: none;
             text-transform: uppercase;
@@ -77,14 +84,33 @@ main {
             0 -1px 2px var(--darken-primary-color),
             1px 0 2px var(--darken-primary-color);
         }
+
+        .pizza .controls .prev,
+        .pizza .controls .next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+        }
+        .pizza .controls .prev {
+            left: 20px;
+            border-right: 30px solid var(--secondary-color);
+            box-shadow: 4px 0 0 var(--primary-color);
+        }
+        .pizza .controls .next {
+            right: 20px;
+            border-left: 30px solid var(--secondary-color);
+            box-shadow: -4px 0 0 var(--primary-color);
+        }
+
     .details {
         grid-area: details;
-        background: green;
     }
 
     .cart {
         grid-area: cart;
-        background: blue;
     }
 
 
