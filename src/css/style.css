@@ -141,9 +141,26 @@ main > div:not(:first-of-type) {
     .details p {
         grid-column: 1 / 2  ;
     }
+
     .cart {
         grid-area: cart;
+        background: var(--secondary-color);
+        font-size: .8rem;
     }
+        .cart h1 {
+            text-shadow: 0 0 4px var(--darken-secondary-color);
+        }
+
+        .cart h1, .cart p {
+            text-align: center;
+        }
+        .cart p:not(:first-of-type):before {
+            content:'▹ ';
+        }
+
+        .cart p.total::before {
+            content: '';
+        }
 
 
 /* FOOTER */
