@@ -1,7 +1,7 @@
-10--css-slider-2 FAIT 7/02/2021 A 22H45
+11--css-details- FAIT 10/02/2021 A 01H00
 
 En train de Lire : https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
 
 stop "
-Pertinence de BEM
+Ingérences transversales et… OOCSS
 "
