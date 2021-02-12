@@ -77,10 +77,7 @@ main > div:not(:first-of-type) {
         grid-area: pizzas;
         overflow: hidden;
     }
-    .pizzas, .details, .cart {
-        display: none !important;
 
-    }
     .slides {
         height: 100%;
         width: calc(100% * 3); /* TMP */
