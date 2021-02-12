@@ -2,6 +2,4 @@
 
 En train de Lire : https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
 
-stop "
-Ingérences transversales et… OOCSS
-"
+stop "Ingérences transversales et… OOCSS"

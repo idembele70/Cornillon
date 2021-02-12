@@ -47,17 +47,40 @@ main {
     "details details cart";
 }
 
-#home {
-    display: none; /*TMP*/
+#home, #admin {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 30px;
 }
+    #home h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+            text-shadow: 0.5px 0.5px 0  #eee,
+                        1px 1px 0 #ccc,
+                        1.5px 1.5px #999,
+                        2px 2px #777,
+                        2.5px 2.5px 0 #555;
+    }
+    #home a {
+        text-decoration: none;
+        padding: 10px;
+        color: var(--primary-color);
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: inline-block;
+    }
 main > div:not(:first-of-type) {
     padding: 10px;
 }
     .pizzas {
-    grid-area: pizzas;
-    overflow: hidden;
+        grid-area: pizzas;
+        overflow: hidden;
     }
+    .pizzas, .details, .cart {
+        display: none !important;
 
+    }
     .slides {
         height: 100%;
         width: calc(100% * 3); /* TMP */
