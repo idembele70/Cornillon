@@ -1,6 +1,8 @@
+import { environment } from '../env.js';
+
 export class App {
     constructor() {
-        // this.goTo();
+        this.pageContent = "";
     }
 
     async goTo(view) {
@@ -18,7 +20,23 @@ export class App {
             .then(data => this.pageContent += data);
 
         document.body.innerHTML = this.pageContent;
+
+        this.init(view)
+    }
+    init(view){
+        if (view === 'order-pizza') {
+            this.getPizzas();
+        }
     }
 
+    getPizzas(){
+        fetch(environment.urlApi)
+            .then(res => res.json())
+            .then(data => {
+                if (data && data.pizzas) {
+                    console.log(data.pizzas);
+                }
+            })
+    }
 }
 
