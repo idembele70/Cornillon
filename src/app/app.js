@@ -21,7 +21,7 @@ export class App {
 
         document.body.innerHTML = this.pageContent;
 
-        this.init(view)
+        this.init(view);
     }
     init(view){
         if (view === 'order-pizza') {
@@ -36,7 +36,7 @@ export class App {
                 if (data && data.pizzas) {
                     console.log(data.pizzas);
                 }
-            })
+            });
     }
 }
 

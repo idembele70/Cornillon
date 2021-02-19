@@ -1,3 +1,4 @@
+
 export class Router {
     static run(app) {
         const HOME_PAGE = 0,
