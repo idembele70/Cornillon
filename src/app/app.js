@@ -1,3 +1,4 @@
+import { Pizza } from './models/pizza.js';
 import { environment } from '../env.js';
 
 export class App {
@@ -46,14 +47,17 @@ export class App {
             .then(res => res.json())
             .then(data => {
                 if (data && data.pizzas) {
-                    this.pizzas = data.pizzas ;
-
                     for (let pizza of data.pizzas) {
-                        this.createPizzaTag(pizza);
-                        // console.log(pizza);
+                        this.pizzas.push(new Pizza(pizza));
                     }
+                   this.run();
                 }
             });
+    }
+    run(){
+        for (let pizza of this.pizzas) {
+            this.createPizzaTag(pizza);
+        }
     }
     createPizzaTag(pizza) {
         const pizzaTag = document.createElement('div');
@@ -71,4 +75,4 @@ export class App {
         this.slidesTag.style.width = `${this.slideWidth*this.pizzas.length}px`;
         this.slidesTag.appendChild(pizzaTag);
     }
-}
+} 

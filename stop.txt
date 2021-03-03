@@ -1,6 +1,5 @@
-18--creation-slides FAIT 24/02/2021 A 20H07
+19--creation-modele FAIT 03/03/2021 A 21H05
 
 En train de Lire : https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
 
-stop "Ingérences transversales et… OOCSS"
-
+stop "Cas d'utilisation, partie 1 : HTML"
