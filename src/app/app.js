@@ -56,7 +56,8 @@ export class App {
     }
     run(){
         for (let pizza of this.pizzas) {
-            this.createPizzaTag(pizza);
+           pizza.html = this.createPizzaTag(pizza);
+            this.configureNavigationSlideOf(pizza)
         }
     }
     createPizzaTag(pizza) {
@@ -74,5 +75,27 @@ export class App {
 
         this.slidesTag.style.width = `${this.slideWidth*this.pizzas.length}px`;
         this.slidesTag.appendChild(pizzaTag);
+
+        return pizzaTag;
+    }
+
+    configureNavigationSlideOf(pizza){
+        pizza.html
+        .querySelector('.prev')
+        .addEventListener('click', () => {
+        const slidesTagLeft = parseInt(this.slidesTag.style.left) || 0;
+        const offsetLeft = slidesTagLeft + this.slideWidth;
+
+        this.slidesTag.style.left = `${offsetLeft}px`;
+        });
+
+        pizza.html
+        .querySelector('.next')
+        .addEventListener('click', () => {
+        const slidesTagLeft = parseInt(this.slidesTag.style.left) || 0;
+        const offsetLeft = slidesTagLeft - this.slideWidth;
+
+        this.slidesTag.style.left = `${offsetLeft}px`;
+        });
     }
 } 
