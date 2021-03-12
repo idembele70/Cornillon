@@ -4,13 +4,13 @@ import { environment } from '../env.js';
 export class App {
     constructor() {
         this.pageContent = "";
-        this.pizzas =  [];
+        this.pizzas = [];
         this.slidesTag = null;
         this.detailsTag = null;
         this.cartTag = null;
     }
 
-    get slideWidth(){
+    get slideWidth() {
         return (window.innerWidth >= 580) ? window.innerWidth : 580;
     }
 
@@ -50,13 +50,13 @@ export class App {
                     for (let pizza of data.pizzas) {
                         this.pizzas.push(new Pizza(pizza));
                     }
-                   this.run();
+                    this.run();
                 }
             });
     }
-    run(){
+    run() {
         for (let pizza of this.pizzas) {
-           pizza.html = this.createPizzaTag(pizza);
+            pizza.html = this.createPizzaTag(pizza);
             this.configureNavigationSlideOf(pizza)
         }
     }
@@ -73,29 +73,40 @@ export class App {
         </div>
         `;
 
-        this.slidesTag.style.width = `${this.slideWidth*this.pizzas.length}px`;
+        this.slidesTag.style.width = `${this.slideWidth * this.pizzas.length}px`;
         this.slidesTag.appendChild(pizzaTag);
 
         return pizzaTag;
     }
 
-    configureNavigationSlideOf(pizza){
-        pizza.html
-        .querySelector('.prev')
-        .addEventListener('click', () => {
-        const slidesTagLeft = parseInt(this.slidesTag.style.left) || 0;
-        const offsetLeft = slidesTagLeft + this.slideWidth;
+    configureNavigationSlideOf(pizza) {
+        const indexOfCurrentPizza = this.pizzas.indexOf(pizza);
 
-        this.slidesTag.style.left = `${offsetLeft}px`;
-        });
+        const configureClickEvent = (dir, canListenEvent) => {
+            const btControl = pizza.html.querySelector(`.${dir}`);
 
-        pizza.html
-        .querySelector('.next')
-        .addEventListener('click', () => {
-        const slidesTagLeft = parseInt(this.slidesTag.style.left) || 0;
-        const offsetLeft = slidesTagLeft - this.slideWidth;
+            if (canListenEvent) {
+                btControl.addEventListener('click', () => {
+                    const slidesTagLeft = parseInt(this.slidesTag.style.left) || 0;
+                    const offsetLeft = (dir === 'prev')
+                        ? slidesTagLeft + this.slideWidth
+                        : slidesTagLeft - this.slideWidth;
+                    this.slidesTag.style.left = `${offsetLeft}px`;
+                });
+            }  else {
+                btControl.style.display = 'none';
+            }
+        }
 
-        this.slidesTag.style.left = `${offsetLeft}px`;
-        });
+        configureClickEvent(
+            'prev',
+            indexOfCurrentPizza > 0,
+            
+        );
+
+        configureClickEvent(
+            'next',
+            indexOfCurrentPizza < (this.pizzas.length-1),
+        )
     }
-} 
+}
